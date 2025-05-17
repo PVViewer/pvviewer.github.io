@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PVViewer - Free Image and Video Player</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Tahoma, sans-serif;
+      background: linear-gradient(to bottom, #1a1a1a, #2b2b2b);
+      color: #f0f0f0;
+    }
+
+    /* Navbar */
+    nav {
+      background: linear-gradient(to bottom, #2d3a4a, #1b2635);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    nav img {
+      height: 40px;
+    }
+
+    nav h1 {
+      font-size: 20px;
+      margin: 0;
+      color: #ffffff;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #cccccc;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #4e8cff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: linear-gradient(to bottom, #333f4f, #1e2a38);
+    }
+
+    header h1 {
+      margin: 10px 0 5px;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #20232a;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #cccccc;
+    }
+
+    .section ul {
+      padding-left: 20px;
+    }
+
+    .download-button {
+      display: inline-block;
+      padding: 12px 25px;
+      font-size: 18px;
+      font-weight: bold;
+      background: linear-gradient(to bottom, #4e8cff, #1e90ff);
+      color: white;
+      border: 2px solid #1e90ff;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+      margin-top: 20px;
+    }
+
+    .download-button:hover {
+      background: linear-gradient(to bottom, #3a7de0, #0073e6);
+      transform: scale(1.03);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+      font-size: 14px;
+      background: #121212;
+      color: #aaaaaa;
+    }
+
+    footer a {
+      color: #4e8cff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo-title">
+      <img src="logo.png" alt="PVViewer Logo">
+      <h1>PVViewer</h1>
+    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#opensource">Open Source</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h1>Free Image and Video Player</h1>
+    <p>Open Source. Simple. Powerful. Linux support coming in 1 day!</p>
+  </header>
+
+  <!-- About Section -->
+  <div class="section" id="about">
+    <h2>About PVViewer</h2>
+    <p><strong>PVViewer</strong> is a sleek and powerful media viewer built to handle both images and videos effortlessly. It's designed for users who want simplicity, performance, and support for modern formats. Whether you’re viewing a PNG, a JPEG, or playing MP4 and MKV files, PVViewer does it all.</p>
+  </div>
+
+  <!-- Features Section -->
+  <div class="section" id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Supports major image formats (JPG, PNG, GIF, BMP)</li>
+      <li>Plays common video files (MP4, MKV, AVI)</li>
+      <li>Lightweight and fast performance</li>
+      <li>Minimalist and retro-styled UI</li>
+      <li>Free and Open Source</li>
+      <li>Upcoming Linux version support</li>
+    </ul>
+  </div>
+
+  <!-- Download Section -->
+  <div class="section" id="download">
+    <h2>Download PVViewer</h2>
+    <p>The latest version of PVViewer is available for Windows. Linux version is coming in just 1 day!</p>
+    <a class="download-button" href="https://github.com/PVViewer/PVViewer/releases/download/1.0/PVViewerInstaller.msi">Download for Windows</a>
+  </div>
+
+  <!-- Open Source Section -->
+  <div class="section" id="opensource">
+    <h2>Open Source</h2>
+    <p>PVViewer is proudly open source! You can view the source code, contribute, and report issues on our GitHub repository.</p>
+    <p>
+      <a href="https://github.com/PVViewer/PVViewer" target="_blank" class="download-button">Visit GitHub</a>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 PVViewer Project &mdash; <a href="https://github.com/PVViewer/PVViewer" target="_blank">GitHub</a>
+  </footer>
+
+</body>
+</html>
